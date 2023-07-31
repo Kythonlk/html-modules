@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    :root {
-      --button-text-color: #ffffff; /* Default text color (white) */
+    /* styles.css */
+    body {
+      margin: 0;
+      padding: 0;
     }
 
-    .custom-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: var(--button-text-color); /* Use the custom property for text color */
-      border: none;
-      border-radius: 5px;
+    .banner-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .banner-slider {
+      display: flex;
+    }
+
+    .banner-slider img {
+      width: 100%;
+      height: auto;
       cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: bold;
     }
   </style>
 </head>
+
 <body>
-  <a href="https://dhabione.com">
-    <button class="custom-button">{{buttonText}}</button>
+  <a href="https://dhabione.com/guaranteed-lowest-price/">
+    <div class="banner-container">
+      <div class="banner-slider">
+        <img src="https://dhabione.com/wp-content/uploads/2023/07/Be-cool-in-this-hot-season.webp" alt="Image 1" />
+        <img src="https://dhabione.com/wp-content/uploads/2023/07/Big-sale-banner-1.webp" alt="Image 2" />
+        <img src="https://dhabione.com/wp-content/uploads/2023/07/home-banner-furniture.webp" alt="Image 3" />
+      </div>
+    </div>
   </a>
+  <script src="script.js" defer></script>
 </body>
+
 </html>
