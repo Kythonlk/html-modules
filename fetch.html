@@ -1,30 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-  <title>My Website</title>
-  <style>
-    /* Set the text color for the button module */
-    :root {
-      --button-text-color: #ffffff;
-    }
-  </style>
-</head>
-<body>
-  <!-- Add an empty div to insert the external section -->
-  <div id="externalSection"></div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>My Website</title>
+    <style>
+      /* Set the text color for the button module */
+      :root {
+        --button-text-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="externalSection"></div>
 
-  <!-- Add the rest of your content -->
-
-  <script>
-    // Fetch the local HTML file and insert it into the page
-    fetch('/slider.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('externalSection').innerHTML = data;
-      })
-      .catch(error => console.error('Error fetching the section:', error));
-  </script>
-</body>
+    <script>
+      fetch("/slider.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("externalSection").innerHTML = data;
+        })
+        .catch((error) => console.error("Error fetching the section:", error));
+    </script>
+  </body>
 </html>
